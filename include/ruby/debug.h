@@ -22,6 +22,7 @@ RBIMPL_SYMBOL_EXPORT_BEGIN()
 
 /* profile frames APIs */
 int rb_profile_frames(int start, int limit, VALUE *buff, int *lines);
+int rb_profile_frames_for_thread(VALUE thread, int start, int limit, VALUE *buff, int *lines);
 VALUE rb_profile_frame_path(VALUE frame);
 VALUE rb_profile_frame_absolute_path(VALUE frame);
 VALUE rb_profile_frame_label(VALUE frame);
